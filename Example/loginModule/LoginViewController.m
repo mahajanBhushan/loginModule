@@ -18,6 +18,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.emailTextField.text = @"bhushan@biz4solutions.com";
+
+    self.passwordTextField.text = @"4solutions";
 }
 
 - (void)didReceiveMemoryWarning
