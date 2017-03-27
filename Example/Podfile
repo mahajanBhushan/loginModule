@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'loginModule_Example' do
+  pod 'loginModule', :path => '../'
+
+  target 'loginModule_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
