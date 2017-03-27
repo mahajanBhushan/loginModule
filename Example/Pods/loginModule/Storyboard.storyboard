@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="2Ne-b0-kAn">
+            <objects>
+                <viewController id="J9W-Q9-HPl" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Nj-6m-CEL"/>
+                        <viewControllerLayoutGuide type="bottom" id="SFY-3W-3CR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IfM-wI-LQu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HwT-Nq-m7J">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7S-PQ-tfE">
+                                        <rect key="frame" x="51" y="265" width="273" height="136"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t4n-E4-Uv7">
+                                                <rect key="frame" x="20" y="20" width="233" height="30"/>
+                                                <color key="backgroundColor" red="0.4549019608" green="0.67450980390000004" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="t4n-E4-Uv7" secondAttribute="height" multiplier="233:30" id="n2z-Wj-hTU"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dtm-Wb-KNu">
+                                                <rect key="frame" x="20" y="86" width="233" height="30"/>
+                                                <color key="backgroundColor" red="0.4549019608" green="0.67450980390000004" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="t4n-E4-Uv7" firstAttribute="leading" secondItem="V7S-PQ-tfE" secondAttribute="leading" constant="20" id="3T7-Hm-HdM"/>
+                                            <constraint firstItem="t4n-E4-Uv7" firstAttribute="top" secondItem="V7S-PQ-tfE" secondAttribute="top" constant="20" id="77P-55-yWJ"/>
+                                            <constraint firstItem="dtm-Wb-KNu" firstAttribute="leading" secondItem="V7S-PQ-tfE" secondAttribute="leading" constant="20" id="9Qr-vi-Ijl"/>
+                                            <constraint firstAttribute="trailing" secondItem="t4n-E4-Uv7" secondAttribute="trailing" constant="20" id="I35-JX-n0o"/>
+                                            <constraint firstAttribute="width" constant="273" id="T8b-Cp-bFa"/>
+                                            <constraint firstItem="dtm-Wb-KNu" firstAttribute="top" secondItem="t4n-E4-Uv7" secondAttribute="bottom" constant="36" id="Wbz-XA-c2Q"/>
+                                            <constraint firstAttribute="trailing" secondItem="dtm-Wb-KNu" secondAttribute="trailing" constant="20" id="YyH-yA-o85"/>
+                                            <constraint firstAttribute="height" constant="136" id="lhY-mD-zxt"/>
+                                            <constraint firstAttribute="bottom" secondItem="dtm-Wb-KNu" secondAttribute="bottom" constant="20" id="vW5-hv-UBh"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="V7S-PQ-tfE" firstAttribute="centerY" secondItem="HwT-Nq-m7J" secondAttribute="centerY" id="wZX-oo-pOp"/>
+                                    <constraint firstItem="V7S-PQ-tfE" firstAttribute="centerX" secondItem="HwT-Nq-m7J" secondAttribute="centerX" id="yb7-h8-SmW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HwT-Nq-m7J" firstAttribute="centerY" secondItem="IfM-wI-LQu" secondAttribute="centerY" id="Jqv-3o-mdF"/>
+                            <constraint firstItem="SFY-3W-3CR" firstAttribute="top" secondItem="HwT-Nq-m7J" secondAttribute="bottom" id="SoA-no-Pgi"/>
+                            <constraint firstItem="HwT-Nq-m7J" firstAttribute="top" secondItem="IfM-wI-LQu" secondAttribute="top" id="p70-80-cB4"/>
+                            <constraint firstItem="HwT-Nq-m7J" firstAttribute="leading" secondItem="IfM-wI-LQu" secondAttribute="leading" id="rnA-tK-sg6"/>
+                            <constraint firstItem="HwT-Nq-m7J" firstAttribute="centerX" secondItem="IfM-wI-LQu" secondAttribute="centerX" id="sh4-bK-ZhR"/>
+                            <constraint firstAttribute="trailing" secondItem="HwT-Nq-m7J" secondAttribute="trailing" id="uyg-kU-Viq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="t4n-E4-Uv7" id="ycx-HC-43u"/>
+                        <outlet property="passwordTextField" destination="dtm-Wb-KNu" id="VAg-Pg-6KV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LdV-wE-9Y5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-153" y="3"/>
+        </scene>
+    </scenes>
+</document>

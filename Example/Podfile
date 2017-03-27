@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'loginModule_Example' do
-  pod 'loginModule', :path => '../'
+  pod 'loginModule', :git => 'https://github.com/mahajanBhushan/loginModule.git'
 
   target 'loginModule_Tests' do
     inherit! :search_paths
